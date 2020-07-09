@@ -37,8 +37,7 @@ public class AppController extends MultiDexApplication {
 
     private void initializeChannelize() {
         ChannelizeConfig channelizeConfig = new ChannelizeConfig.Builder(this)
-                //.setAPIKey("Your Public Key")
-                .setAPIKey("qHvonVEyIxDLa6zh")
+                .setAPIKey("Your Public Key")
                 .setLoggingEnabled(true)
                 .build();
 

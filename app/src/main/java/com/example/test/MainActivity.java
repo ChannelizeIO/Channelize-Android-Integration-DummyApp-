@@ -45,18 +45,7 @@ public class MainActivity extends AppCompatActivity {
         login.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                /*channelize.loginWithUserId("userId", "clientServerToken", new CompletionHandler<LoginResponse>() {
-                    @Override
-                    public void onComplete(LoginResponse loginResponse, ChannelizeError channelizeError) {
-                        if (loginResponse != null && loginResponse.getUser() != null) {
-                            startMainActivity();
-                        }else if (channelizeError != null) {
-                            Log.e("Error",channelizeError.toString());
-                        }
-                    }
-                });*/
-
-                channelize.loginWithEmailPassword("test10556@seaddons.com", "123456", new CompletionHandler<LoginResponse>() {
+                channelize.loginWithUserId("userId", "clientServerToken", new CompletionHandler<LoginResponse>() {
                     @Override
                     public void onComplete(LoginResponse loginResponse, ChannelizeError channelizeError) {
                         if (loginResponse != null && loginResponse.getUser() != null) {
